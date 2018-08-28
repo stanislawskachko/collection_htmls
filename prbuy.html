@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>How to buy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="lvivm.html">Lviv</a></li>
+                <li><a href="bikes.html">Bikes</a></li>
+                <li><a href="lvivt.html">Lviv Theatre</a></li>
+                <li><a href="skiing.html">Skiing</a></li>
+                <li><a href="pregnancy.html">Pregnanacy</a></li>
+                <li><a href="prresult.html">Pregnanacy Result</a></li>
+                <li><a href="prbuy.html">Pregnanacy Test buy</a></li>
+            </ul>
+        </nav>
+</head>
+
+<body>
+    <header>
+        <h1><b><i>You can choose tests and fill in the form and pay. And we will send you a test within two business days.
+                </i></b>
+        </h1>
+        <img src="pregnancy_photo/background_pregnancy.jpg" width="300" height="200" alt="background pictures">
+        <!--it will be background from header-->
+    </header>
+    <nav>
+        <a href="index.html" title="On this page you can do your test">
+            <!--index.html-->
+            <b>Home</b>
+        </a> |
+        <a href="results.html" title="On this page you can get your results" target="_blank">
+            <!--go to result of test and looking for different kind of our test-->
+            <b>Results</b>
+        </a> |
+        <a href="buy_test.html" title="On this page you can choose and buy a real test" target="_blank">
+            <!--stay at the same page-->
+            <b>Buy our tests</b>
+        </a> |
+    </nav>
+    <section>
+        <h2>Look for our tests.<q>Not a waddle. Just pregnancy swag</q>.</h2>
+
+        <header>
+            <h2>How to know your status. So different way know women but not all the right. </h2>
+            <img src="pregnancy_photo/pic-1-pregnancy-tips-76922.jpg" alt="good and bad test">
+        </header>
+        <article>
+            <h3>Payment form</h3>
+            <table border="3">
+                <caption>Our tests</caption>
+                <tr>
+
+                    <th>average sensitivity</th>
+                    <th>double test</th>
+                    <th>sensitive</th>
+                </tr>
+                <tr>
+                    <td>If you have a long delay and you feel pregnant then a moderate pregnancy test is just for you</td>
+                    <td>double test for greater confidence as a result</td>
+                    <td>a very sensitive test for those who do not have a delay but want to know the result</td>
+                </tr>
+            </table>
+        </article>
+        <footer>
+            <form id="payment" method="POST" action="https://formspree.io/anastasija.semen@gmail.com">
+                <fieldset>
+                        <legend>Choose a test</legend>
+                        <ol>
+                            <li>
+                                <input id="average_sensitivity" name="test" type="radio">
+                                <label for="average_sensitivity">Average sensitivity</label>
+                            </li>
+                            <li>
+                                <input id="double_test"  name="test" type="radio">
+                                <label for="double_test" >Double test </label>
+                            </li>
+                            <li>
+                                <input id="sensitive_test" name="test" type="radio">
+                                <label for="sensitive_test">Sensitive test</label>
+                            </li>
+                        </ol>
+                    </fieldset>
+                <fieldset>
+                    <legend>Your details</legend>
+                    <ol>
+                        <li>
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Name" required autofocus>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="example@gmail.com" required>
+                        </li>
+                        <li>
+                            <label for="phone">Phone</label>
+                            <input id="phone" name="phone" type="tel" placeholder="+380633343585" required>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery address</legend>
+                    <ol>
+                        <li>
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="5" required></textarea>
+                        </li>
+                        <li>
+                            <label for="postcode">Post code</label>
+                            <input id="postcode" name="postcode" type="text" required>
+                        </li>
+                        <li>
+                            <label for="country">Country</label>
+                            <input id="country" name="country" type="text" required>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Card details</legend>
+                    <ol>
+                        <li>
+                            <fieldset>
+                                <legend>Card type</legend>
+                                <ol>
+                                    <li>
+                                        <input id="visa" name="cardtype" type="radio">
+                                        <label for="visa">VISA</label>
+                                    </li>
+                                    <li>
+                                        <input id="mastercard" name="cardtype" type="radio">
+                                        <label for="mastercard">Mastercard</label>
+                                    </li>
+                                    <li>
+                                        <input id="pryvat24" name="cardtype" type="radio">
+                                        <label for="pryvat24">Pryvat24</label>
+                                    </li>
+                                </ol>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <label for="cardnumber">Card number</label>
+                            <input id="cardnumber" name="cardnumber" type="number" required>
+                        </li>
+                        <li>
+                            <label for="secure">Security code</label>
+                            <input id="secure" name="secure" type="number" required>
+                        </li>
+                        <li>
+                            <label for="namecard">Name on card</label>
+                            <input id="namecard" name="namecard" type="text" placeholder="Exact name as on the card" required>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <button type="submit">Buy it!</button>
+                </fieldset>
+            </form>
+            <form action="results.html">
+                <button type="submit">yuor result</button>
+            </form>
+        </footer>
+    </section>
+    <div id="top">
+        <form action="buy_test.html">
+            <button type="submit">top</button>
+        </form>
+    </div>
+    <footer>
+        <p>follow us and we promisse to support you every day</p>
+        <!--follow us of diferent social network-->
+        <a href="https://www.facebook.com/" title="Go to facebook" target="_blank">Facebook</a>
+        <a href="https://www.pinterest.com/" title="Go to pinterest" target="_blank">Pinterest</a>
+        <a href="https://www.instagram.com/" title="Go to instagram" target="_blank">Instagram</a>
+        <p>Copyright ©2018 Web Developer</p>
+    </footer>
+</body>
+
+</html>
